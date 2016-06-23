@@ -386,6 +386,10 @@ button:hover, .link_button:hover {
 	.footer{
 		top: -99px;
 	}
+
+    .newsCard{
+        min-height: auto;
+    }
 }
 
 @media (max-width: 480px) {
