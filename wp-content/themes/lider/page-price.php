@@ -16,22 +16,7 @@
     </section>
     <section class="section_tb info">
         <div class="section_line_lr conteiner">
-            <?php
-            // Start the loop.
-            while (have_posts()) : the_post();
-                if (has_post_thumbnail()) {
-                    $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
-                    $image_attributes = wp_get_attachment_image_src(get_post_thumbnail_id(), $size, $icon);
-                }
-                ?>
-                <h2>Информация об абонементах</h2>
-                <?php if ($image_url[0]) { ?>
-                    <img src='<?php echo $image_url[0] ?>' alt="">
-                <?php } ?>
-
-
-                <?php the_content(); ?>
-            <?php endwhile; ?>
+            <?php the_content(); ?>
         </div>
     </section>
 </div>
